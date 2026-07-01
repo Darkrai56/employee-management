@@ -1,7 +1,7 @@
 package com.example.employeeManagement.service;
 
 import com.example.employeeManagement.entity.Attendance;
-import com.example.employeemanagement.model.AttendanceModel;
+import com.example.employeeManagement.model.AttendanceModel;
 
 import java.time.LocalDate;
 import java.util.List;

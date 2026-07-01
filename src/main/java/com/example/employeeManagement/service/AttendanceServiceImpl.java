@@ -5,7 +5,7 @@ import com.example.employeeManagement.entity.Employee;
 import com.example.employeeManagement.repository.AttendanceRepository;
 import com.example.employeeManagement.repository.EmployeeRepository;
 import com.example.employeeManagement.service.AttendanceService;
-import com.example.employeemanagement.model.AttendanceModel;
+import com.example.employeeManagement.model.AttendanceModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

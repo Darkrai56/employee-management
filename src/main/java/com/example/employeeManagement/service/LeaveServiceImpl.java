@@ -5,7 +5,7 @@ import com.example.employeeManagement.entity.Leave;
 import com.example.employeeManagement.repository.EmployeeRepository;
 import com.example.employeeManagement.repository.LeaveRepository;
 import com.example.employeeManagement.service.LeaveService;
-import com.example.employeemanagement.model.LeaveModel;
+import com.example.employeeManagement.model.LeaveModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

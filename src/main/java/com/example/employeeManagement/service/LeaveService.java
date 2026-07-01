@@ -1,7 +1,7 @@
 package com.example.employeeManagement.service;
 
 import com.example.employeeManagement.entity.Leave;
-import com.example.employeemanagement.model.LeaveModel;
+import com.example.employeeManagement.model.LeaveModel;
 
 import java.time.LocalDate;
 import java.util.List;
