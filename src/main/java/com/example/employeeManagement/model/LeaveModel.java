@@ -1,40 +1,25 @@
-package com.example.employeeManagement.entity;
+package com.example.employeemanagement.model;
 
-import jakarta.persistence.*;
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "leave_table")
-public class Leave {
+public class LeaveModel {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    @Column(nullable = false)
+    private Integer employeeId;
     private String leaveType;
-
-    @Column(nullable = false)
     private LocalDate fromDate;
-
-    @Column(nullable = false)
     private LocalDate toDate;
-
-    @Column(nullable = false)
     private String reason;
-
-    @Column(nullable = false)
     private String status;
-    @ManyToOne
-    @JoinColumn(name = "employee_id")
-    private Employee employee;
 
-    public Leave() {
+    public LeaveModel() {
     }
 
-    public Leave(Integer id, String leaveType, LocalDate fromDate,
-                 LocalDate toDate, String reason, String status) {
+    public LeaveModel(Integer id, Integer employeeId, String leaveType,
+                      LocalDate fromDate, LocalDate toDate,
+                      String reason, String status) {
         this.id = id;
+        this.employeeId = employeeId;
         this.leaveType = leaveType;
         this.fromDate = fromDate;
         this.toDate = toDate;
@@ -48,6 +33,14 @@ public class Leave {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(Integer employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getLeaveType() {
@@ -88,13 +81,5 @@ public class Leave {
 
     public void setStatus(String status) {
         this.status = status;
-
-        public Employee getEmployee() {
-            return employee;
-        }
-
-        public void setEmployee(Employee employee) {
-            this.employee = employee;
-        }
     }
 }

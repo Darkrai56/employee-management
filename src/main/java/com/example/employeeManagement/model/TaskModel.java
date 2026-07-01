@@ -1,40 +1,25 @@
-package com.example.employeeManagement.entity;
+package com.example.employeeManagement.model;
 
-import jakarta.persistence.*;
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "task")
-public class Task {
+public class TaskModel {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    @Column(nullable = false)
+    private Integer employeeId;
     private String title;
-
-    @Column(nullable = false)
     private String description;
-
-    @Column(nullable = false)
     private String priority;
-
-    @Column(nullable = false)
     private LocalDate dueDate;
-
-    @Column(nullable = false)
     private String status;
-    @ManyToOne
-    @JoinColumn(name = "employee_id")
-    private Employee employee;
 
-    public Task() {
+    public TaskModel() {
     }
 
-    public Task(Integer id, String title, String description,
-                String priority, LocalDate dueDate, String status) {
+    public TaskModel(Integer id, Integer employeeId, String title,
+                     String description, String priority,
+                     LocalDate dueDate, String status) {
         this.id = id;
+        this.employeeId = employeeId;
         this.title = title;
         this.description = description;
         this.priority = priority;
@@ -48,6 +33,14 @@ public class Task {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(Integer employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getTitle() {
@@ -88,12 +81,5 @@ public class Task {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
     }
 }
