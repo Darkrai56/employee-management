@@ -87,8 +87,7 @@ public class Leave {
     }
 
     public void setStatus(String status) {
-        this.status = status;
-
+        this.status = status;}
         public Employee getEmployee() {
             return employee;
         }
@@ -97,4 +96,3 @@ public class Leave {
             this.employee = employee;
         }
     }
-}
