@@ -27,5 +27,5 @@ public interface TaskRepository extends JpaRepository<Task, Integer> {
 
     List<TaskModel> getTaskByEmployee(Integer employeeId);
 
-    List<TaskModel> searchTaskTitle(String title);
+    List<TaskModel> findByTitle(String title);
 }

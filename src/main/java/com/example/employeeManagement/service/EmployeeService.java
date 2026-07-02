@@ -1,7 +1,7 @@
 package com.example.employeeManagement.service;
 
 import com.example.employeeManagement.entity.Employee;
-import com.example.employeemanagement.model.EmployeeModel;
+import com.example.employeeManagement.model.EmployeeModel;
 
 import java.util.List;
 

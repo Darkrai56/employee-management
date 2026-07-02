@@ -1,7 +1,7 @@
 package com.example.employeeManagement.service;
 
 import com.example.employeeManagement.entity.Employee;
-import com.example.employeemanagement.model.EmployeeModel;
+import com.example.employeeManagement.model.EmployeeModel;
 import com.example.employeeManagement.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

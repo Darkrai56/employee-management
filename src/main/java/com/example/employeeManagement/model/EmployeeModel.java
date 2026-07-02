@@ -1,4 +1,4 @@
-package com.example.employeemanagement.model;
+package com.example.employeeManagement.model;
 
 import java.time.LocalDate;
 
